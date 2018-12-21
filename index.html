@@ -5,59 +5,102 @@
 	<title>	Portfolio</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+
 </head>
 <body>
 	<header>
 		<div class='header-left'>
 			<span>Portfolio</span>
 		</div>
-	  <ul class="header-right">
-			<li>Menu</li>
-			<li>Home</li>
-		</ul>
+		<div class="navToggle">
+		  <span>Introduce</span>
+		</div>
+	  <nav class="globalMenuSp">
+      <ul>
+        <li>
+        	<p>
+				    My name is Tsugua Hirata. <br>
+				    I study programing. <br>
+				    This page is introduce of practice create page.
+			    </p>
+		    </li>
+        <li>
+        	<span>skill</span>
+        </li>
+        <li>
+        	<i class="fab fa-html5 fa-4x"></i>
+        	<i class="fab fa-css3-alt fa-4x"></i>
+        	<i class="fab fa-js-square fa-4x"></i>
+        	<i class="fab fa-php fa-4x"></i>
+        </li>
+        <li>
+          <i class="fab fa-github fa-4x"></i>
+			    <i class="fab fa-wordpress fa-4x"></i>
+          <i class="fab fa-sass fa-4x"></i>
+          <i class="fab fa-gulp fa-4x"></i>
+        </li>
+      </ul>
+    </nav>  
 	</header>
 	<aside>
 		<div class=sidevar>
-			<ul class="introduce">
-				<li>
+			<p class="introduce">
 				  My name is Tsugua Hirata. <br>
 				  I study programing. <br>
-				  This page is practice create page introduce.
-				</li>
-				<li>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid pariatur illo dolorum nisi, est ratione vel necessitatibus consequatur doloribus commodi porro, omnis enim? Autem numquam nobis doloremque expedita labore placeat.
-				</li>
-			</ul>
+				  This page is introduce of practice create page.
+			</p>
+			<h2 class="skill-title">Skill</h2>
+      <div class=skill>
+        <i class="fab fa-html5 fa-4x"></i>
+        <i class="fab fa-css3-alt fa-4x"></i>
+        <i class="fab fa-js-square fa-4x"></i>
+        <i class="fab fa-php fa-4x"></i>
+      </div>
+      <div class=skill2>
+			  <i class="fab fa-github fa-4x"></i>
+			  <i class="fab fa-wordpress fa-4x"></i>
+        <i class="fab fa-sass fa-4x"></i>
+        <i class="fab fa-gulp fa-4x"></i>
+      </div>
 		</div>
 	</aside>
 	<main>
-		<div class="img one">
-			<img src="img/cbf5b9f60da99bf791c0aa12a770f4299.jpg" alt="">
-			<span>hogehoge</span>
+		<div class="main-r">
+			<div>
+				<img src="img/homework.png" alt="homework" class="img">
+				<h2 class="site-name">自己紹介</h2>
+				<p class="site-introduce">自己紹介サイトです。htmlとcssを利用して作成しています。</p>
+			</div>
+			<div>
+				<img src="img/homework2.png" alt="homework2" class="img">
+				<h2 class="site-name">会社ホームページ</h2>
+				<p class="site-introduce">会社のホームページをイメージして作成しました。htmlとcss、jsを使用しています。jsはスライダーに使用しました。</p>
+			</div>
+			<div>
+				<img src="img/ToDo.png" alt="ToDo" class="img">
+				<h2 class="site-name">ToDo</h2>
+				<p class="site-introduce">このサイトはToDoリストを管理するサイトです。記入した予定を削除jやdoneへの移動をできるようにしています。html,css,jsを使用しています。</p>
+			</div>
 		</div>
-		<div class="img two">
-			<img src="img/cbf5b9f60da99bf791c0aa12a770f4299.jpg" alt="">
-			<span>hogehoge</span>
-		</div>
-		<div class="img three">
-			<img src="img/cbf5b9f60da99bf791c0aa12a770f4299.jpg" alt="">
-			<span>hogehoge</span>
-		</div>
-		<div class="img four">
-			<img src="img/cbf5b9f60da99bf791c0aa12a770f4299.jpg" alt="">
-			<span>hogehoge</span>
-		</div>
-		<div class="img five">
-			<img src="img/cbf5b9f60da99bf791c0aa12a770f4299.jpg" alt="">
-			<span>hogehoge</span>
-		</div>
-		<div class="img six">
-			<img src="img/cbf5b9f60da99bf791c0aa12a770f4299.jpg" alt="">
-			<span>hogehoge</span>
+		<div  class="main-l">
+			<div>
+				<img src="img/talk-api.png" alt="talk" class="img">
+				<h2 class="site-name">talk-api</h2>
+				<p class="site-introduce">talk-apiを使用し架空の人物とお話ができるサイトを作りました。html,css,js,apiを使用しています。</p>
+			</div>
+			<div>
+				<img src="img/chatan.png" alt="chatan" class="img2">
+				<h2 class="site-name">北谷町紹介サイト</h2>
+				<p class="site-introduce a">北谷町を紹介するためのサイトです。Topページの画像をスライダーで動かせるようにしています。</p>
+			</div>
 		</div>
 	</main>
   <footer>
   	<div class="footer-left">Portfolio</div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+　<script src="app.js"></script>
 </body>
 </html>

@@ -43,53 +43,50 @@ aside{
 }
 .introduce{
 	padding: 150px 0 0 80px;
-}
-.introduce li:first-child{
 	font-size: 30px;
 }
-.introduce li:last-child{
-	font-size: 18px;
-	margin-top: 10px;
+.skill-title{
+	margin: 30px 0 0 80px;
+	font-size: 50px;
+}
+.skill, .skill2{
+	margin:10px 0 0 80px;
 }
 main{
-	display: grid;
+	margin: 100px 0 30px;
 	float: right;
-	grid-template-areas: 'one two three'
-	                     'four two six'
-	                     'four five six';
-	grid-template-rows: repeat(3, 25%);
-  grid-template-columns: repeat(3, 25%);
-  grid-gap: 25px;
-  justify-content: center;
-  margin-top: 100px;
-  padding-top: 60px;
-	height: 100vh;
-	width: 70vw;
-	font-size: 18px;
 	background-color: #394857;
+	width: 70vw;
 }
-.img img{
-	height: 95%;
-	width: 100%;
+.main-r, .main-l{
+	display: flex;
+	margin-left: 50px;
 }
-.one {
-	grid-area: one;
+
+.img{
+	height: 400px;
+	width: 300px;
+	margin-top: 20px;
+	margin-right: 50px;
 }
-.two {
-	grid-area: two;
+.img2{
+  height: 200px;
+  width: 400px;
+  margin-top: 20px;
+  margin-right: 50px;
 }
-.three {
-	grid-area: three;
+.site-name{
+	margin-top: 10px;
+	width: 250px;
+	margin-right: 50px;
+	font-size: 30px;
 }
-.four {
-	grid-area: four;
+.site-introduce{
+	margin: 10px 50px 10px 0;
+	width: 250px;
+	font-size: 20px;
 }
-.five {
-	grid-area: five;
-}
-.six {
-	grid-area: six;
-}
+
 footer{
   display: flex;
   position: fixed;
@@ -103,4 +100,94 @@ footer{
 .footer-left{
 	margin-left: 80px;
   font-size: 20px;
+}
+
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+}
+
+nav.globalMenuSp ul {
+    background: #ccc;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+nav.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    font-size: 30px;
+}
+
+
+nav.globalMenuSp ul li a {
+    display: block;
+    color: #000;
+    padding: 1em 0;
+}
+.navToggle {
+    display: block;
+    position: fixed;  
+    right: 15px;
+    top: 30px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+}
+ 
+.navToggle span {
+    position: absolute;
+    width: 90px;
+    border-bottom: solid 2px #eee;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+.navToggle{
+	display: none;
+}
+
+nav.globalMenuSp.active {
+    transform: translateY(0%);
+}
+.top{
+	display: none;
+}
+
+
+@media screen and (max-width: 767px){
+  aside{
+/*  	float: initial;
+  	position: initial;
+  	width: 100%;
+  	padding-top: 30px;*/
+  	display: none;
+  }
+  main{
+  	display: flex;
+  	float: initial;
+  	width: 100%;
+  	margin-top: 100px;
+  }
+
+  .navToggle{
+  	display: initial;
+  }
+  .main-r, .main-l{
+	  display: initial;
+  }
 }
